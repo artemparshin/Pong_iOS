@@ -7,27 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E448A8629F2B478004CC5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448A8529F2B478004CC5AE /* AppDelegate.swift */; };
-		6E448A8829F2B478004CC5AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448A8729F2B478004CC5AE /* SceneDelegate.swift */; };
-		6E448A8A29F2B478004CC5AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448A8929F2B478004CC5AE /* ViewController.swift */; };
-		6E448A8D29F2B478004CC5AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E448A8B29F2B478004CC5AE /* Main.storyboard */; };
-		6E448A8F29F2B47A004CC5AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E448A8E29F2B47A004CC5AE /* Assets.xcassets */; };
-		6E448A9229F2B47A004CC5AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E448A9029F2B47A004CC5AE /* LaunchScreen.storyboard */; };
+		6E448ADD29F2CC6E004CC5AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E448ADC29F2CC6D004CC5AE /* Main.storyboard */; };
+		6E448AE129F2CDA2004CC5AE /* PongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448ADE29F2CDA1004CC5AE /* PongViewController.swift */; };
+		6E448AE229F2CDA2004CC5AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448ADF29F2CDA1004CC5AE /* SceneDelegate.swift */; };
+		6E448AE329F2CDA2004CC5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AE029F2CDA2004CC5AE /* AppDelegate.swift */; };
+		6E448AE429F2CE77004CC5AE /* PongViewController+BallHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AA129F2BFD6004CC5AE /* PongViewController+BallHit.swift */; };
+		6E448AE529F2CE77004CC5AE /* PongViewController+EnemyPaddleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448A9F29F2BFD6004CC5AE /* PongViewController+EnemyPaddleBehavior.swift */; };
+		6E448AE629F2CE77004CC5AE /* PongViewController+GestureHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448A9E29F2BFD6004CC5AE /* PongViewController+GestureHandling.swift */; };
+		6E448AE729F2CE77004CC5AE /* PongViewController+LaunchBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AA229F2BFD6004CC5AE /* PongViewController+LaunchBall.swift */; };
+		6E448AE829F2CE77004CC5AE /* PongViewController+UIKitDynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AA029F2BFD6004CC5AE /* PongViewController+UIKitDynamics.swift */; };
+		6E448AE929F2CE77004CC5AE /* PongViewController+Win.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448A9C29F2B6E0004CC5AE /* PongViewController+Win.swift */; };
+		6E448AEA29F2CE81004CC5AE /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AB429F2C0B7004CC5AE /* CGPoint+Utils.swift */; };
+		6E448AEB29F2CE81004CC5AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AB529F2C0B7004CC5AE /* Constants.swift */; };
+		6E448AEC29F2CE81004CC5AE /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E448AB629F2C0B7004CC5AE /* Sound.swift */; };
+		6E448AED29F2CEB0004CC5AE /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6E448AAC29F2C0A5004CC5AE /* background.wav */; };
+		6E448AEE29F2CEB0004CC5AE /* hit-sound-high.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6E448AAF29F2C0A5004CC5AE /* hit-sound-high.wav */; };
+		6E448AEF29F2CEB0004CC5AE /* hit-sound-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6E448AAD29F2C0A5004CC5AE /* hit-sound-low.wav */; };
+		6E448AF029F2CEB0004CC5AE /* hit-sound-mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6E448AAE29F2C0A5004CC5AE /* hit-sound-mid.wav */; };
+		6E448AF129F2CEB0004CC5AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E448A8E29F2B47A004CC5AE /* Assets.xcassets */; };
+		6E448AF229F2CEB6004CC5AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E448ABF29F2C5AE004CC5AE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E448A8229F2B478004CC5AE /* Pong_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E448A8529F2B478004CC5AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E448A8729F2B478004CC5AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E448A8929F2B478004CC5AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6E448A8C29F2B478004CC5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E448A8E29F2B47A004CC5AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E448A9129F2B47A004CC5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6E448A9329F2B47A004CC5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E448A9C29F2B6E0004CC5AE /* PongViewController+Win.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PongViewController+Win.swift"; sourceTree = "<group>"; };
+		6E448A9E29F2BFD6004CC5AE /* PongViewController+GestureHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PongViewController+GestureHandling.swift"; sourceTree = "<group>"; };
+		6E448A9F29F2BFD6004CC5AE /* PongViewController+EnemyPaddleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PongViewController+EnemyPaddleBehavior.swift"; sourceTree = "<group>"; };
+		6E448AA029F2BFD6004CC5AE /* PongViewController+UIKitDynamics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PongViewController+UIKitDynamics.swift"; sourceTree = "<group>"; };
+		6E448AA129F2BFD6004CC5AE /* PongViewController+BallHit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PongViewController+BallHit.swift"; sourceTree = "<group>"; };
+		6E448AA229F2BFD6004CC5AE /* PongViewController+LaunchBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PongViewController+LaunchBall.swift"; sourceTree = "<group>"; };
+		6E448AAC29F2C0A5004CC5AE /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		6E448AAD29F2C0A5004CC5AE /* hit-sound-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hit-sound-low.wav"; sourceTree = "<group>"; };
+		6E448AAE29F2C0A5004CC5AE /* hit-sound-mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hit-sound-mid.wav"; sourceTree = "<group>"; };
+		6E448AAF29F2C0A5004CC5AE /* hit-sound-high.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hit-sound-high.wav"; sourceTree = "<group>"; };
+		6E448AB429F2C0B7004CC5AE /* CGPoint+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		6E448AB529F2C0B7004CC5AE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6E448AB629F2C0B7004CC5AE /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		6E448ABF29F2C5AE004CC5AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E448AC129F2C6DB004CC5AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E448AC829F2CBEE004CC5AE /* Pong_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E448ADC29F2CC6D004CC5AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6E448ADE29F2CDA1004CC5AE /* PongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PongViewController.swift; sourceTree = "<group>"; };
+		6E448ADF29F2CDA1004CC5AE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E448AE029F2CDA2004CC5AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E448A7F29F2B478004CC5AE /* Frameworks */ = {
+		6E448AC529F2CBEE004CC5AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,7 +74,7 @@
 		6E448A8329F2B478004CC5AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E448A8229F2B478004CC5AE /* Pong_iOS.app */,
+				6E448AC829F2CBEE004CC5AE /* Pong_iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,27 +82,80 @@
 		6E448A8429F2B478004CC5AE /* Pong_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6E448A8529F2B478004CC5AE /* AppDelegate.swift */,
-				6E448A8729F2B478004CC5AE /* SceneDelegate.swift */,
-				6E448A8929F2B478004CC5AE /* ViewController.swift */,
-				6E448A8B29F2B478004CC5AE /* Main.storyboard */,
-				6E448A8E29F2B47A004CC5AE /* Assets.xcassets */,
-				6E448A9029F2B47A004CC5AE /* LaunchScreen.storyboard */,
-				6E448A9329F2B47A004CC5AE /* Info.plist */,
+				6E448AE029F2CDA2004CC5AE /* AppDelegate.swift */,
+				6E448ADE29F2CDA1004CC5AE /* PongViewController.swift */,
+				6E448ADF29F2CDA1004CC5AE /* SceneDelegate.swift */,
+				6E448AAA29F2C03F004CC5AE /* Utils */,
+				6E448AA929F2C019004CC5AE /* Support Files */,
+				6E448AA829F2C009004CC5AE /* Resources */,
+				6E448A9929F2B52A004CC5AE /* PongViewControllerExtensions */,
 			);
 			path = Pong_iOS;
+			sourceTree = "<group>";
+		};
+		6E448A9929F2B52A004CC5AE /* PongViewControllerExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E448AA129F2BFD6004CC5AE /* PongViewController+BallHit.swift */,
+				6E448A9F29F2BFD6004CC5AE /* PongViewController+EnemyPaddleBehavior.swift */,
+				6E448A9E29F2BFD6004CC5AE /* PongViewController+GestureHandling.swift */,
+				6E448AA229F2BFD6004CC5AE /* PongViewController+LaunchBall.swift */,
+				6E448AA029F2BFD6004CC5AE /* PongViewController+UIKitDynamics.swift */,
+				6E448A9C29F2B6E0004CC5AE /* PongViewController+Win.swift */,
+			);
+			path = PongViewControllerExtensions;
+			sourceTree = "<group>";
+		};
+		6E448AA829F2C009004CC5AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E448AAB29F2C080004CC5AE /* Sounds */,
+				6E448A8E29F2B47A004CC5AE /* Assets.xcassets */,
+				6E448ADC29F2CC6D004CC5AE /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E448AA929F2C019004CC5AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E448ABF29F2C5AE004CC5AE /* LaunchScreen.storyboard */,
+				6E448AC129F2C6DB004CC5AE /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		6E448AAA29F2C03F004CC5AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6E448AB429F2C0B7004CC5AE /* CGPoint+Utils.swift */,
+				6E448AB529F2C0B7004CC5AE /* Constants.swift */,
+				6E448AB629F2C0B7004CC5AE /* Sound.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6E448AAB29F2C080004CC5AE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6E448AAC29F2C0A5004CC5AE /* background.wav */,
+				6E448AAF29F2C0A5004CC5AE /* hit-sound-high.wav */,
+				6E448AAD29F2C0A5004CC5AE /* hit-sound-low.wav */,
+				6E448AAE29F2C0A5004CC5AE /* hit-sound-mid.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E448A8129F2B478004CC5AE /* Pong_iOS */ = {
+		6E448AC729F2CBEE004CC5AE /* Pong_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E448A9629F2B47A004CC5AE /* Build configuration list for PBXNativeTarget "Pong_iOS" */;
+			buildConfigurationList = 6E448AD929F2CBEF004CC5AE /* Build configuration list for PBXNativeTarget "Pong_iOS" */;
 			buildPhases = (
-				6E448A7E29F2B478004CC5AE /* Sources */,
-				6E448A7F29F2B478004CC5AE /* Frameworks */,
-				6E448A8029F2B478004CC5AE /* Resources */,
+				6E448AC429F2CBEE004CC5AE /* Sources */,
+				6E448AC529F2CBEE004CC5AE /* Frameworks */,
+				6E448AC629F2CBEE004CC5AE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,7 +163,7 @@
 			);
 			name = Pong_iOS;
 			productName = Pong_iOS;
-			productReference = 6E448A8229F2B478004CC5AE /* Pong_iOS.app */;
+			productReference = 6E448AC829F2CBEE004CC5AE /* Pong_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,8 +176,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					6E448A8129F2B478004CC5AE = {
+					6E448AC729F2CBEE004CC5AE = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -115,55 +195,49 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E448A8129F2B478004CC5AE /* Pong_iOS */,
+				6E448AC729F2CBEE004CC5AE /* Pong_iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E448A8029F2B478004CC5AE /* Resources */ = {
+		6E448AC629F2CBEE004CC5AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E448A9229F2B47A004CC5AE /* LaunchScreen.storyboard in Resources */,
-				6E448A8F29F2B47A004CC5AE /* Assets.xcassets in Resources */,
-				6E448A8D29F2B478004CC5AE /* Main.storyboard in Resources */,
+				6E448AF229F2CEB6004CC5AE /* LaunchScreen.storyboard in Resources */,
+				6E448AED29F2CEB0004CC5AE /* background.wav in Resources */,
+				6E448AEE29F2CEB0004CC5AE /* hit-sound-high.wav in Resources */,
+				6E448AEF29F2CEB0004CC5AE /* hit-sound-low.wav in Resources */,
+				6E448AF029F2CEB0004CC5AE /* hit-sound-mid.wav in Resources */,
+				6E448AF129F2CEB0004CC5AE /* Assets.xcassets in Resources */,
+				6E448ADD29F2CC6E004CC5AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E448A7E29F2B478004CC5AE /* Sources */ = {
+		6E448AC429F2CBEE004CC5AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E448A8A29F2B478004CC5AE /* ViewController.swift in Sources */,
-				6E448A8629F2B478004CC5AE /* AppDelegate.swift in Sources */,
-				6E448A8829F2B478004CC5AE /* SceneDelegate.swift in Sources */,
+				6E448AEA29F2CE81004CC5AE /* CGPoint+Utils.swift in Sources */,
+				6E448AEB29F2CE81004CC5AE /* Constants.swift in Sources */,
+				6E448AEC29F2CE81004CC5AE /* Sound.swift in Sources */,
+				6E448AE429F2CE77004CC5AE /* PongViewController+BallHit.swift in Sources */,
+				6E448AE529F2CE77004CC5AE /* PongViewController+EnemyPaddleBehavior.swift in Sources */,
+				6E448AE629F2CE77004CC5AE /* PongViewController+GestureHandling.swift in Sources */,
+				6E448AE729F2CE77004CC5AE /* PongViewController+LaunchBall.swift in Sources */,
+				6E448AE829F2CE77004CC5AE /* PongViewController+UIKitDynamics.swift in Sources */,
+				6E448AE929F2CE77004CC5AE /* PongViewController+Win.swift in Sources */,
+				6E448AE329F2CDA2004CC5AE /* AppDelegate.swift in Sources */,
+				6E448AE129F2CDA2004CC5AE /* PongViewController.swift in Sources */,
+				6E448AE229F2CDA2004CC5AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6E448A8B29F2B478004CC5AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E448A8C29F2B478004CC5AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6E448A9029F2B47A004CC5AE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E448A9129F2B47A004CC5AE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6E448A9429F2B47A004CC5AE /* Debug */ = {
@@ -280,11 +354,12 @@
 			};
 			name = Release;
 		};
-		6E448A9729F2B47A004CC5AE /* Debug */ = {
+		6E448ADA29F2CBEF004CC5AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8X26RW3XX8;
@@ -303,16 +378,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Artem.Pong-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6E448A9829F2B47A004CC5AE /* Release */ = {
+		6E448ADB29F2CBEF004CC5AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8X26RW3XX8;
@@ -348,11 +425,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E448A9629F2B47A004CC5AE /* Build configuration list for PBXNativeTarget "Pong_iOS" */ = {
+		6E448AD929F2CBEF004CC5AE /* Build configuration list for PBXNativeTarget "Pong_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E448A9729F2B47A004CC5AE /* Debug */,
-				6E448A9829F2B47A004CC5AE /* Release */,
+				6E448ADA29F2CBEF004CC5AE /* Debug */,
+				6E448ADB29F2CBEF004CC5AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
